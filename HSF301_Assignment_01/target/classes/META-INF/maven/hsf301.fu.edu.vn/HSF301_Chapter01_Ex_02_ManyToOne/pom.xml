@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>hsf301.fu.edu.vn</groupId>
+  <artifactId>HSF301_Chapter01_Ex_02_ManyToOne</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+	  	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-entitymanager</artifactId>
+	    <version>5.6.9.Final</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+	<dependency>
+	    <groupId>com.microsoft.sqlserver</groupId>
+	    <artifactId>mssql-jdbc</artifactId>
+	    <version>11.2.3.jre17</version>
+	</dependency>
+  </dependencies>
+</project>

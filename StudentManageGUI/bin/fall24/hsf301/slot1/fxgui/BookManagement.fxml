@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fall24.hsf301.slot1.fxcontroller.BookManagementController">
+   <children>
+      <Text layoutX="132.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Management">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="44.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" wrappingWidth="68.091796875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is BN" wrappingWidth="48.091796875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="41.091796875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtBookID" editable="false" layoutX="148.0" layoutY="90.0" prefHeight="25.0" prefWidth="319.0" />
+      <TextField fx:id="txtAuthor" layoutX="148.0" layoutY="134.0" prefHeight="25.0" prefWidth="319.0" />
+      <TextField fx:id="txtIsBN" layoutX="148.0" layoutY="174.0" prefHeight="25.0" prefWidth="319.0" />
+      <TextField fx:id="txtTitle" layoutX="148.0" layoutY="217.0" prefHeight="25.0" prefWidth="319.0" />
+      <TableView fx:id="tblBooks" layoutX="34.0" layoutY="312.0" prefHeight="181.0" prefWidth="532.0">
+        <columns>
+          <TableColumn fx:id="bookID" prefWidth="75.0" text="Book ID" />
+          <TableColumn fx:id="author" prefWidth="114.5" text="Author" />
+            <TableColumn fx:id="isBN" prefWidth="111.0" text="Is BN" />
+            <TableColumn fx:id="title" prefWidth="231.0" text="Title" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnCreate" layoutX="512.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleCreate" prefHeight="25.0" prefWidth="60.0" text="CREATE" />
+      <Button fx:id="btnUpdate" layoutX="511.0" layoutY="131.0" mnemonicParsing="false" onAction="#handleUpdate" text="UPDATE" />
+      <Button fx:id="btnDelete" layoutX="511.0" layoutY="173.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="25.0" prefWidth="58.0" text="DELETE" />
+      <Button layoutX="43.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleStudentManagement" text="Student Management" />
+      <Button fx:id="btnClear" layoutX="511.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="25.0" prefWidth="58.0" text="CLEAR" />
+      <Button fx:id="btnCancel" layoutX="488.0" layoutY="507.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" prefWidth="78.0" text="CANCEL" />
+   </children>
+</AnchorPane>
